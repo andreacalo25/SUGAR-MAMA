@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Mama</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="homeSCURO.css" id="dark-theme" disabled>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="home">
+    <div class="announcement-bar">
+        Bad day? You definitely need our candies 🍬
+    </div>
+
+    <div class="header">
+        <div class="nav">
+            <a href="shop.html">SHOP</a>
+            <a href="giftbox.html">GIFT BOX</a>
+            <a href="about.html">ABOUT US</a>
+        </div>
+        <div class="logo">
+            <a href="home.html" class="logo-link">SUGAR MAMA!</a>
+        </div>
+        <div class="sign-in">
+            <a href="contact us.html">CONTACT US</a>
+            <a href="#" class="cart" onclick="openCart()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6ZM5 6L7 4H17L19 6H5ZM12 18C10.8954 18 10 17.1046 10 16C10 14.8954 10.8954 14 12 14C13.1046 14 14 14.8954 14 16C14 17.1046 13.1046 18 12 18Z" fill="#e0418b"/>
+                </svg>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="theme-switcher" onclick="switchTheme()">
+                <svg width="22.03" height="22.05" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M245.879,1.526c-5.6-2.8-12-1.6-16.8,2.4s-6.8,10-5.2,16c4,16.4,5.6,33.6,4.4,51.6c-5.2,84-72.8,151.2-156.8,156.4
+                    c-17.2,1.2-34.4-0.4-51.6-4c-6-1.6-12,0.4-16,5.6c-4,4.8-4.8,11.2-2.4,16.8c30.4,65.2,95.2,106.4,167.2,106.4c3.2,0,6.8,0,10-0.4
+                    c92.4-4.8,168.4-81.2,173.6-173.6C356.679,103.126,315.079,33.526,245.879,1.526z M336.279,177.926c-4.4,84.4-74,154-158.4,158.4
+                    c-69.2,3.6-132.8-34.4-161.6-96.8c18.8,4.4,37.6,5.6,56.4,4.4c92-6,166-79.6,172-171.6c1.2-19.6-0.4-38.4-4.8-56.4
+                    C302.279,45.126,340.279,108.726,336.279,177.926z"/>
+                    <path d="M242.679,277.526c-3.6,2.4-4.4,7.6-2,11.2c1.6,2.4,4,3.6,6.8,3.6c1.6,0,3.2-0.4,4.4-1.2c30.8-21.6,52.8-52.8,60.8-89.2
+                    c0.8-4.4-1.6-8.8-6-9.6c-4.4-0.8-8.4,1.6-9.6,6C289.879,230.726,270.679,258.726,242.679,277.526z"/>
+                    <path d="M213.479,292.726c-2.4,0.8-4.4,1.6-7.2,2.4c-4.4,1.2-6.8,5.6-5.6,10c1.2,3.6,4.4,6,7.6,6c0.8,0,1.6,0,2.4-0.4
+                    c3.6-0.8,6-2,8.8-3.2c4-1.6,6-6.4,4.4-10.4C222.279,292.726,217.479,290.726,213.479,292.726z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h1>HAPPINESS<br>IN YOU POCKET</h1>
+                <a href="shop.html" class="shop-now">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="marquee-item">SO SWEET</div>
+            <div class="marquee-item">FOR EVERY OCCASION</div>
+            <div class="marquee-item">HIGH QUALITY INGREDIENTS</div>
+            <div class="marquee-item">EXOTIC</div>
+            <div class="marquee-item">A GIFT FOR YOUR LOVED ONES</div>
+            <div class="marquee-item">COLORFUL</div>
+            <div class="marquee-item">SWEET & SOUR</div>
+            <div class="marquee-item">ORIGINAL</div>
+            <div class="marquee-item">BRING THEM ANYWHERE</div>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <h2 class="carousel-title">SHOP FLAVORS!</h2>
+        <div class="carousel slick-slider">
+            <div class="carousel-item slide1">
+                <div class="carousel-announcement-bar">FAN FAVORITE!</div>
+                <div class="image-container">
+                    <img src="img/shop_orsetti.jpg" alt="Product 1" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>TEDDY BEARS </h3>
+                    <p class="reviews">★★★★★ 7938 Reviews</p>
+                    <p>Sweet and nostalgic<br>The perfect shades<br><br></p>
+                    <p class="price">€10.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="carousel-item slide2">
+                <div class="carousel-announcement-bar">NEW FLAVOR!</div>
+                <div class="image-container">
+                    <img src="img/shop_vermi.jpg" alt="Product 2" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>FRIZZY WORMS</h3>
+                    <p class="reviews">★★★★ 5877 Reviews</p>
+                    <p>Might seem scary <br>They are only really sour<br><br></p>
+                    <p class="price">€12.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="carousel-item slide3">
+                <div class="carousel-announcement-bar">LIMITED EDITION!</div>
+                <div class="image-container">
+                    <img src="img/shop_rainbow.jpg" alt="Product 3" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>RAINBOWS</h3>
+                    <p class="reviews">★★★★★ 1898 Reviews</p>
+                    <p>Some adrenaline for your day<br>To find your pot of gold<br><br></p>
+                    <p class="price">€15.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="carousel-item slide4">
+                <div class="carousel-announcement-bar">BEST SELLER!</div>
+                <div class="image-container">
+                    <img src="img/shop_conversation_hearts.jpg" alt="Product 4" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>SELF-LOVE</h3>
+                    <p class="reviews">★★★★★ 10472 Reviews</p>
+                    <p>Words of affirmation are important<br>These are also sweet and crunchy<br><br></p>
+                    <p class="price">€11.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="carousel-item slide5">
+                <div class="carousel-announcement-bar">NEW ARRIVAL!</div>
+                <div class="image-container">
+                    <img src="img/shop_liquirizie.jpg" alt="Product 5" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>RED LIQUORICE</h3>
+                    <p class="reviews">★★★ 6307 Reviews</p>
+                    <p>Chewing liquorice eliminates stress <br>Perfect to eat in the office<br><br></p>
+                    <p class="price">€13.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="carousel-item slide6">
+                <div class="carousel-announcement-bar">FRESH FLAVOR!</div>
+                <div class="image-container">
+                    <img src="img/shop_spritz.jpg" alt="Product 6" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>HAPPY HOUR</h3>
+                    <p class="reviews">★★★★ 2328 Reviews</p>
+                    <p>Aperol Spritz flavored<br>You can never say no<br><br></p>
+                    <p class="price">€14.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="carousel-item slide7">
+                <div class="carousel-announcement-bar">TOP PICK!</div>
+                <div class="image-container">
+                    <img src="img/shop_marshmellow.jpg" alt="Product 7" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>ON CLOUD 9</h3>
+                    <p class="reviews">★★★★★ 15872 Reviews</p>
+                    <p>Soft that melt in your mouth<br>Perfect to dip in hot chocolate<br><br></p>
+                    <p class="price">€9.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="carousel-item slide8">
+                <div class="carousel-announcement-bar">CLASSIC!</div>
+                <div class="image-container">
+                    <img src="img/shop_smarties.jpg" alt="Product 8" class="carousel-image">
+                </div>
+                <div class="carousel-content">
+                    <h3>CHOCOLATE COINS</h3>
+                    <p class="reviews">★★★★ 14993 Reviews</p>
+                    <p>Classic and colorful<br>It's impossible to stop eating them<br><br></p>
+                    <p class="price">€8.00</p>
+                    <button class="btn-cart">ADD TO CART</button>
+                    <a href="shop.html"><button class="btn-shop">SHOP NOW</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Cart -->
+    <div id="sidebar-cart" class="sidebar">
+        <button class="closebtn" onclick="closeCart()">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- I prodotti del carrello verranno aggiunti qui dinamicamente -->
+        </div>
+        <div class="cart-footer">
+            <p class="subtotal">SUBTOTAL <span id="cart-subtotal">€0.00</span></p>
+            <p>TAXES AND SHIPPING CALCULATED AT CHECKOUT</p>
+            <div class="cart-buttons">
+                <button onclick="continueShopping()" class="btn-cart">CONTINUE SHOPPING</button>
+                <button onclick="checkout()" class="btn-cart">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <div id="cart-overlay" class="overlay" onclick="closeCart()"></div>
+    
+
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="home.html">SUGAR MAMA!</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">GIFT BOX</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">SPONSOR REQUESTS</a>
+                <a href="#">TERMS</a>
+                <a href="#">PRIVACY</a>
+                <a href="#">SHIPPING</a>
+            </div>
+            <div class="footer-contact">
+                <label for="email">EMAIL ADDRESS</label>
+                <div class="email-form">
+                    <input type="email" id="email" placeholder="">
+                    <button type="submit">→</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
