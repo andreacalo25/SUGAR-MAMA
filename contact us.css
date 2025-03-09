@@ -1,0 +1,279 @@
+
+/* Stili generali */
+@font-face {
+    font-family: "BasierSquareMono";
+    src: url("font/BasierSquareMono-Regular.otf") format("truetype");
+  }
+body, html {
+    margin: 0;
+    
+    padding-top: 75px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+    max-width: 1700px;
+}
+.announcement-bar {
+    font-family: BasierSquareMono;
+    transition: text-decoration 0.3s;
+    background-color: #f6d4e1;
+    color: #76b1cf;
+    text-align: center;
+    height: 40.5px;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.announcement-bar:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #76b1cf;
+    height: 111.5px;
+    padding: 0 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40.5px;
+    width: 100%;
+    border-bottom: 2px solid #f6d4e1;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.header .nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header .nav a, .header .logo a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #f6d4e1;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.header .logo a {
+    font-family: Manicotti;
+    font-weight: 100;
+    text-align: center;
+    font-size: 34px; /* Font più grande per il logo */
+}
+
+.header .sign-in {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Spazio tra Contact Us e il carrello */
+}
+
+.header .sign-in a {
+    text-decoration: none;
+    color: #f6d4e1;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.header .sign-in .cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header .sign-in .cart svg {
+    fill: #f6d4e1;
+}
+
+
+
+
+
+body, html {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 152px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+.contact-page {
+    text-align: center;
+}
+
+.contact-banner {
+    background: url(img/contact_us_banner.jpg) no-repeat center center;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+    z-index: 0;
+    position: relative;
+    margin-bottom: -40px;
+   
+  
+}
+.contact-text{
+    font-family: Manicotti;
+    font-weight: 100;
+    color: #f6d4e1;
+ transform: rotate(-4deg);
+    font-size: 70px;
+    padding-top: 0px;
+}
+
+.contact-content {
+    background-color: #f6d4e1;
+    transform: rotate(-2deg);
+    padding: 100px 0;
+    padding-bottom: 220px;
+    margin: 0;
+    width: 110vw;
+    position: relative;
+    left: -5vw;
+    z-index: 1;
+}
+
+.contact-form {
+    font-family: BasierSquareMono;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: none; /* Colore di sfondo rosa per il form */
+    padding: 40px;
+    border-radius: 0; /* Rimuove gli angoli arrotondati */
+   
+    transform: rotate(2deg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: BasierSquareMono;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #76b1cf;
+    border-radius: 0; /* Rimuove gli angoli arrotondati */
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #76b1cf;
+    background-color: #f6d4e1; /* Colore di sfondo rosa per gli input e textarea */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-family: BasierSquareMono;
+    color: #76b1cf;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-form button {
+    font-family: BasierSquareMono;
+    padding: 15px;
+    background-color: #76b1cf;
+    color: #f6d4e1;
+    border: none;
+    border-radius: 0; /* Rimuove gli angoli arrotondati */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase; /* Aggiunge il testo in maiuscolo */
+}
+
+.contact-form button:hover {
+    background-color: #f6d4e1;
+    color: #76b1cf;
+    border: 2px solid #76b1cf;
+}
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    margin-top: -30px;
+    z-index: 2;
+    position: relative;
+    background-color: #76b1cf;
+    padding: 40px 20px;
+    color: #f6d4e1;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo a {
+    font-family: Manicotti;
+    font-size: 34px;
+    font-weight: 100;
+    color: #f6d4e1;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.footer-links a {
+    font-family: BasierSquareMono;
+    color: #f6d4e1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact {
+    max-width: 300px;
+}
+
+.footer-contact label {
+    font-family: BasierSquareMono;
+    display: block;
+    font-weight: bold;
+}
+
+.email-form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f6d4e1;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+}
+
+.email-form input {
+    background-color: transparent;
+    border: none;
+    padding-top: 0px;
+    padding: 20px;
+    color: #f6d4e1;
+    margin-right: 10px;
+    outline: none;
+}
+
+.email-form button {
+    background-color: transparent;
+    border: none;
+    color: #f6d4e1;
+    font-size: 35px;
+    cursor: pointer;
+}

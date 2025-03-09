@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Box - Sugar Mama</title>
+    <link rel="stylesheet" href="giftbox.css">
+    <link rel="stylesheet" href="giftboxSCURO.css" id="dark-theme" disabled>
+    <script defer src="scriptgiftbox.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/oca2wrg.css">
+</head>
+<body class="giftbox">
+    <div class="announcement-bar">
+        Bad day? You definitely need our candies 🍬
+    </div>
+    <div class="header">
+        <div class="nav">
+            <a href="shop.html">SHOP</a>
+            <a href="giftbox.html">GIFT BOX</a>
+            
+        </div>
+        <div class="logo">
+            <a href="index.html" class="logo-link">SUGAR MAMA!</a>
+        </div>
+        <div class="sign-in">
+            <a href="contact us.html">CONTACT US</a>
+            <a href="#" class="cart" onclick="openCart()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6ZM5 6L7 4H17L19 6H5ZM12 18C10.8954 18 10 17.1046 10 16C10 14.8954 10.8954 14 12 14C13.1046 14 14 14.8954 14 16C14 17.1046 13.1046 18 12 18Z" />
+                </svg>
+                <span id="cart-count">0</span>
+            </a>
+            
+        </div>
+    </div>
+
+    <div class="product-section">
+        <div class="product-info">
+            <div class="reviews">
+                <span>★★★★ 2638 Reviews</span>
+            </div>
+            <h1 id="product-title">CANDIES AND CANDLES</h1>
+            <p id="product-description">A box of candy to distract you from the advancing years, ideal for celebrating a birthday with a shower of sweetness. When choosing candies you can choose a custom package on which to add greetings, aphorisms and photos of the birthday guests. </p>
+            <h2>FLAVOR</h2>
+            <div class="flavors">
+                <img src="img/gif_box_compleanno.jpg"alt="Candies and Candles" data-flavor="Candies and Candles" data-theme="flavor-1">
+                <img src="img/gift_box_san_valentino.jpg" alt="Sweet Sweet Love" data-flavor="Sweet Sweet Love" data-theme="flavor-2">
+                <img src="img/gift_box_laurea.jpg" alt="Don't tell the Doctor" data-flavor="Don't tell the Doctor" data-theme="flavor-3">
+                <img src="img/gift_box_esotica.jpg" alt="Exotic Experiences" data-flavor="Exotic Experiences" data-theme="flavor-4">
+            </div>
+            <div class="action-container">
+                <div class="quantity-container">
+                    <button class="quantity-btn" id="decrease-quantity">-</button>
+                    <input type="text" id="quantity" value="1" readonly>
+                    <button class="quantity-btn" id="increase-quantity">+</button>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="product-image">
+            <img id="product-image" src="img/gif_box_compleanno.jpg" alt="Candies and Candles">
+        </div>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="marquee-item">WE MAKE YOUR WHIS COME TRUE</div>
+            <div class="marquee-item">FOR CINEMA NIGHTS</div>
+            <div class="marquee-item">FOR THE PERFECT PARTY</div>
+            <div class="marquee-item">FRUIT FLAVORED </div>
+            <div class="marquee-item">TO END THE DAY ON A GOOD NOTE</div>
+            <div class="marquee-item">SOUR & FRIZZY</div>
+            <div class="marquee-item">THE PERFECT GIFT</div>
+            <div class="marquee-item">CHOCOLATE IS ALWAYS A GOOD CHOICE</div>
+            <div class="marquee-item">SO DELICIOUS</div>
+            <div class="marquee-item">REFRESHING</div>
+            <div class="marquee-item">THE ENERGY YOU NEED</div>
+            <div class="marquee-item">PLENTY OF CHOICE</div>
+        </div>
+    </div>
+
+    <!-- Sidebar Cart -->
+    <div id="sidebar-cart" class="sidebar">
+        <button class="closebtn" onclick="closeCart()">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- I prodotti del carrello verranno aggiunti qui dinamicamente -->
+        </div>
+        <div class="cart-footer">
+            <p class="subtotal">SUBTOTAL <span id="cart-subtotal">€0.00</span></p>
+            <p>TAXES AND SHIPPING CALCULATED AT CHECKOUT</p>
+            <div class="cart-buttons">
+                <button onclick="continueShopping()" class="btn-cart">CONTINUE SHOPPING</button>
+                <button onclick="checkout()" class="btn-cart">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <div id="cart-overlay" class="overlay" onclick="closeCart()"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="home.html">SUGAR MAMA!</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">GIFT BOX</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">SPONSOR REQUESTS</a>
+                <a href="#">TERMS</a>
+                <a href="#">PRIVACY</a>
+                <a href="#">SHIPPING</a>
+            </div>
+            <div class="footer-contact">
+                <label for="email">EMAIL ADDRESS</label>
+                <div class="email-form">
+                    <input type="email" id="email" placeholder="">
+                    <button type="submit">→</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
