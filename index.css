@@ -208,7 +208,7 @@ a {
 
 
 .marquee-container {
-    max-width: 1445px;
+    max-width: 100%;
     overflow: hidden;
     background-color: var(--secondary-color);
     border-bottom: 2px solid var(--primary-color) ;
