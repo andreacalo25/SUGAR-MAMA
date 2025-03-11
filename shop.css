@@ -80,6 +80,7 @@ body {
 }
 
 .header .logo a {
+    font-weight:100;
     font-family: Manicotti;
     text-align: center;
     font-size: 34px; /* Font più grande per il logo */
